@@ -35,14 +35,14 @@ function Home() {
         </div>
         <div className="container__row">
           <div className="container__item">
-            {!isPopularNewsLoading?
+            {/* {!isPopularNewsLoading?
               <>
                 <Popular popularNews={popularNews.items} />
               </>
               :
               <>
               </>
-            }
+            } */}
           </div>
         </div>
       </div>
