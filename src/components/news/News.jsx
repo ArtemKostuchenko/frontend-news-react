@@ -86,7 +86,7 @@ function News({ _id, image, title, description, views = 0, user, isLoading = fal
                             {image ?
                                 <>
                                     <Link to={`/news/${_id}`}>
-                                        <img src={`http://localhost:4444/uploads/news/saved/${image}`} alt={title} style={{
+                                        <img src={`${process.env.REACT_APP_API_URL}/uploads/news/saved/${image}`} alt={title} style={{
                                             maxWidth: '100%'
                                         }} />
                                     </Link>
@@ -119,7 +119,7 @@ function News({ _id, image, title, description, views = 0, user, isLoading = fal
                         <div>
                             <Box className="about__card">
                                 <Box className="author">
-                                    <Avatar src={`http://localhost:4444/uploads/profile/${user.image}`}></Avatar>
+                                    <Avatar src={`${process.env.REACT_APP_API_URL}/uploads/profile/${user.image}`}></Avatar>
                                     <p className="fullname">{user.fullName}</p>
                                     <p className="role">Автор</p>
                                 </Box>

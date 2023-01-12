@@ -220,7 +220,7 @@ function Profile() {
                             width: '300px'
                         }}>
                             <DialogTitle>Змінити фото</DialogTitle>
-                            <Avatar sx={{ width: 75, height: 75, bgcolor: 'white' }} src={`http://localhost:4444/uploads/profile/${user.image}`}></Avatar>
+                            <Avatar sx={{ width: 75, height: 75, bgcolor: 'white' }} src={`${process.env.REACT_APP_API_URL}/uploads/profile/${user.image}`}></Avatar>
                             <Button variant="contained" color="warning" sx={{
                                 width: '175px',
                                 marginTop: 1

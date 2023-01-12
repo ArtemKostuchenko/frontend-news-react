@@ -31,7 +31,7 @@ export default function AccountMenu({ image, fullName, logOut, isAuth }) {
                 >
                     {image ?
                         <>
-                            <Avatar sx={{ width: 45, height: 45, bgcolor: 'white' }} src={`http://localhost:4444/uploads/profile/${image}`}>
+                            <Avatar sx={{ width: 45, height: 45, bgcolor: 'white' }} src={`${process.env.REACT_APP_API_URL}/uploads/profile/${image}`}>
                             </Avatar>
                         </>
                         :

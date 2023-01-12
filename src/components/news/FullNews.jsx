@@ -62,7 +62,7 @@ function FullNews() {
                                     <div>
                                         {data.image ?
                                             <>
-                                                <img src={`http://localhost:4444/uploads/news/saved/${data.image}`} alt={data.title} style={{
+                                                <img src={`${process.env.REACT_APP_API_URL}/uploads/news/saved/${data.image}`} alt={data.title} style={{
                                                     maxWidth: '100%',
                                                 }} />
                                             </>
@@ -89,7 +89,7 @@ function FullNews() {
                             <div className="fullnews__row">
                                 <Box className="fullnews__author-card">
                                     <div className="author-card__author">
-                                        <Avatar src={`http://localhost:4444/${data.user.image}`}></Avatar>
+                                        <Avatar src={`${process.env.REACT_APP_API_URL}/${data.user.image}`}></Avatar>
                                         <p className="fullname">{data.user.fullName}</p>
                                         <p className="role">Автор</p>
                                     </div>

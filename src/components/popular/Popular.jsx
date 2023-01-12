@@ -16,7 +16,7 @@ function Popular({ popularNews, isLoading = true }) {
                                 <Link to={`/news/${pop._id}`}>
                                     <div className="popular__item">
                                         <div className="popular__image">
-                                            <img src={`http://localhost:4444/uploads/news/saved/${pop.image}`} alt={pop.title} />
+                                            <img src={`${process.env.REACT_APP_API_URL}/uploads/news/saved/${pop.image}`} alt={pop.title} />
                                         </div>
                                         <div className='popular__detail'>
                                             <div className="popular__title">

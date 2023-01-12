@@ -121,7 +121,7 @@ function AddNews() {
                 {imageUrl &&
                     <>
                         <div>
-                            <img src={`http://localhost:4444/uploads/news/temp/${imageUrl}`} alt={title} style={{
+                            <img src={`${process.env.REACT_APP_API_URL}/uploads/news/temp/${imageUrl}`} alt={title} style={{
                                 maxWidth: '100%'
                             }} />
                         </div>
