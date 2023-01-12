@@ -1,0 +1,26 @@
+@import "../../mixins.scss";
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .register__main{
+        margin-top: 4rem;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 1px solid rgb(194, 194, 194);
+        background-color: white;
+        border-radius: 3px;
+        .register__title{
+            @include adaptivFont(22, 19);
+            margin: 10px 0;
+        }
+        .register__input{
+            margin: 10px 0;
+        }
+    }
+}

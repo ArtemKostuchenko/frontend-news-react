@@ -1,0 +1,55 @@
+@import "../../mixins.scss";
+
+.info__popular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    & .info-popular__title {
+        font-weight: 600;
+        @include adaptivFont(16, 14);
+    }
+
+    & .popular__row {
+        display: flex;
+        flex-direction: column;
+
+        & .popular__item {
+            display: flex;
+            padding: 10px;
+            margin: 10px 0;
+            align-items: center;
+            border-radius: 3px;
+            border: 1px solid gray;
+
+            & .popular__image img {
+                width: 70px;
+            }
+
+            & .popular__title {
+                font-weight: 400;
+                @include adaptivFont(16, 14);
+            }
+
+            & .popular__detail {
+                width: 100%;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .popular__views {
+                    align-self: flex-end;
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: gray;
+                    @include adaptivFont(14, 12);
+                }
+            }
+        }
+    }
+}

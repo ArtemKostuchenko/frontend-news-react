@@ -1,0 +1,50 @@
+@import "../../mixins.scss";
+
+header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(194, 194, 194);
+
+    & h2 {
+        margin-left: 1rem;
+        color: #FFA100;
+        @include adaptivFont(30, 22);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .auth button {
+        margin: 1rem;
+        @include adaptivFont(14, 12);
+    }
+}
+
+@media (max-width: 520px) {
+    .auth {
+        display: none;
+    }
+
+    .account__menu {
+        display: block;
+    }
+}
+
+@media (min-width: 522px) {
+    .auth {
+        display: block;
+    }
+
+    .account__menu {
+        display: none;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+}
